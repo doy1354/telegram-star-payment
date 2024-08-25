@@ -1,7 +1,8 @@
 import { Bot } from "grammy";
+import dotenv from 'dotenv';
+dotenv.config();
 
 const bot = new Bot(process.env.TELEGRAM_BOT_TOKEN);
-
 // Map is used for simplicity. For production use a database
 const paidUsers = new Map();
 
